@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    height: 60vh;
+    padding-top: 60px;
+  }
+  
+  .left {
+    flex: 0.5; /* A imagem ocupa 50% da tela */
+    background-image: url('./assets/Banner.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100%;
+  }
+  
+  .right {
+    flex: 0.5; /* O conteúdo de texto vai ocupar 50% da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    background-color: #1C2122;
+    padding: 10px; 
+    box-sizing: border-box;
+    color: white; 
+  }
+  
+  .text {
+    font-family: Poppins;
+    font-weight: bold;
+    margin: 10px 0; 
+    text-align: left;
+    padding-left: 40px;
+  }
+  
+  .text-green {
+    color: var(--verde-claro);
+    font-size: 20px; 
+    padding-left: 40px;
+  }
+  
+  .text-white {
+    padding-left: 40px;
+    font-size: 48px; 
+  }
+  
+  .text-brand {
+    font-size: 32px; 
+    font-weight: bold;
+    margin: 40px 0; 
+    text-align: left;
+    padding-left: 40px;
+  }
+  
+  .text-offer {
+    padding-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 0; 
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .shop-btn {
+    margin-left: 40px;
+    background-color: var(--verde-claro);
+    color: white;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .timer {
+    padding-left: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+    gap: 10px; 
+}
+
+.timer span {
+    background-color: white; 
+    color: black;
+    padding: 20px 25px;
+    border-radius: 5px; 
+    font-size: 24px;
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+
+.timer .day,
+.timer .hour,
+.timer .minute,
+.timer .second {
+    background-color: #f0f0f0;
+}
